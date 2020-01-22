@@ -2,26 +2,30 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="chart.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="http://d3js.org/d3.v3.js"></script>
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     </head>
 
     <body>
-        <div class="title">
-            Movies that most frequently use the word "Fuck"
+        <div class="container">
+            <h1 class="title">Movies that <br> most frequently <br> use the word <br> <span style='color:crimson; font-size: 2.5em;'>"Fuck!"</span></h1>
         </div>
-        
-        <svg id="chart"></svg>
+
+        <div class="container">
+            <div class="post-body">
+                <p>Recently, a lot of people have asked me "Rumen, which are the movies with the highest "Fuck" frequency in them?". Being tired of answering everyone individually, I decided to create this handy visualization, showing just that.</p>
+                <p>I've focused only on the movies with more than 150 "fucks" in them, because - hey, who cares about a movie with less than 150 "fucks", am I right? Also, because there's Wikipedia data only for those.</p>
+                <p>The list excludes porn movies.</p>
+            </div>
+        </div>
 
         <div class="footer">
-            <p>
-                Made by <a href="https://rmanev.com">Rumen</a>.
-
-                Visualization created using <a href="http://d3js.org/">d3</a>.
-                "Fuck" frequency data from <a href="https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/List_of_films_that_most_frequently_use_the_word_"fuck"">Wikipedia</a>.
-            </p>
+            <hr>
+            <span>Visualization created using <a href="http://d3js.org/">d3</a>.</span> <br>
+            <span>Data taken from <a href="https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/List_of_films_that_most_frequently_use_the_word_"fuck"">Wikipedia</a>.</span>
         </div>
 
-        <script src="http://d3js.org/d3.v3.min.js"></script>
-        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
         <script src="chart.js" charset="utf-8"></script>
     </body>
 </html>
