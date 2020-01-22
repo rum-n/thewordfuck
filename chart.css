@@ -20,7 +20,7 @@ body {
 }
 
 .footer {
-  width: 15%;
+  width: 25%;
   position: static;
   margin-left: 20px;
   margin-bottom: 5px;
@@ -78,4 +78,18 @@ body {
   margin: -1px 0 0 0;
   top: 100%;
   left: 0;
+}
+
+copyright {
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  float: right;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+.bottom {
+  margin-top: 100px;
 }

@@ -1,5 +1,6 @@
 const DATA_FILE = "test.tsv";
 
+// COLUMN CHART
 let margin = {
   top: 85, 
   right: 50, 
@@ -82,4 +83,8 @@ function type(d) {
   d.NumberOfFucks = +d.NumberOfFucks;
   return d;
 }
+
+// SCATTER PLOT
+
+
 
